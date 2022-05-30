@@ -1,0 +1,52 @@
+
+HTML/CSS
+
+- Struktura strony internetowej
+- Elementy składowe strony WWW
+- Obrazy, odsyłacze, tabele, listy
+- Formularze
+- Multimedia
+- Wstawianie stylów
+- Składnia języka CSS
+- Selektory
+- Model blokowy CSS/układy kolumnowe
+- Inne elementy/pseudoklasy/pseudoelemnty
+- Menu w języku CSS
+- Responsywny układ strony
+- Systemy zarzadzania treścią
+- Modele przestrzeni barw
+- Metody tworzenia animacji
+- Sprawdzian wiadomości/EGZAMINY
+
+JS
+
+- Struktura języka JavaScript 
+- Umieszczanie  JavaScript w dokumencie HTML
+- Typy danych, deklaracja zmiennych i stałych - JavaScript 
+- Operatory arytmetyczne, porównania, przypisania, bitowe, konkatenacji.
+- Operatory inkrementacji i dekremantacji.
+- Okienka dialogowe ALERT, PROMPT, CONFIRM
+- Okienka dialogowe - wprowadzanie danych, zmiana typu danych
+- Instrukcje warunkowe.
+- Pętla for - konstrukcja, zastosowanie
+- Pętla while -  konstrukcja, zastosowanie
+- Pętla do while - konstrukcja, zastosowanie
+- Instrukcja wyboru SWITCH - konstrukcja, zastosowanie
+- Tworzenie funkcji, funkcja anonimowa, funkcja z parametrem, funkcja zwracająca wartość,  wywoływanie funkcji.
+- Obiekty w JavaScript.
+- Obiekty wbudowane właściwości i metody  obiektów- String, , Date, Math
+- Obiekt  Array - Zmienne tablicowe  - deklaracja, dodawanie danych do tablic. 
+- Tablice, jednowymiarowe, wielowymiarowe, asocjacyjne.
+- Obiekty DOM, przeglądarki właściowści i metody  obiektów- window, navigator, document, history, location.
+- Zdarzenia w JavaScript. Myszki, klawiatury,
+- Obsługa formularzy - JavaScript
+- Walidacja formularzy - JavaScript
+- Zmiana stylów przy wykorzystaniu JavaScript.
+
+
+PHP
+
+- Struktura języka PHP
+- Umieszczanie   PHP w dokumencie HTML
+- Instrukcje "Echo" i "Print" PHP, Komentowanie treści PHP
+- Typy danych, deklaracja zmiennych i stałych - PHP
