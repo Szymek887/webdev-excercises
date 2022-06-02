@@ -1,0 +1,13 @@
+.header-container {
+    margin: 50px 0;
+}
+.header-container h1, h2{
+    color: var(--blue);
+    font-weight: 900;
+    text-align: center;
+}
+
+.header-container h2 {
+    font-weight: 700;
+    color: white;
+}
