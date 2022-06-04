@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -216,4 +216,10 @@ body {
 
 .main-page-footer p {
     margin: 20px;
+}
+
+@media only screen and (max-width: 900px){
+    .task-board {
+        grid-template-columns: 45% 45%;
+    }
 }
