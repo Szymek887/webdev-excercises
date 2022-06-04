@@ -2,10 +2,10 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../excercise.css">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../style.css" rel="stylesheet">
+    <link href="../../excercise.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -16,62 +16,59 @@
     <hr>
     <div class="excercise">
         <h3 class="excercise-header">Czym są instrukcje warunkowe?</h3>
-        <p class="excercise-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non lacus quis
-            nulla faucibus elementum. Morbi tristique egestas justo, viverra iaculis arcu elementum vel. Pellentesque
-            commodo sit amet elit eget posuere. Vestibulum accumsan, sem vel porttitor luctus, mauris mauris placerat
-            lacus, quis sodales est mauris sit amet lectus. Fusce a diam in velit suscipit consectetur. Etiam at turpis
-            a nunc semper faucibus. Cras hendrerit dui a felis rutrum lobortis. Orci varius natoque penatibus et magnis
-            dis parturient montes, nascetur ridiculus mus.
-            Instrukcje warunkowe to takie elementy języka programowania, których używamy, aby fragment kodu wykonywał
-            się po spełnieniu jakiegoś warunku
-        </p>
-        <div class="excercise-solution">
-            <img src="../../images/pro-design.webp" width="100%" height="100%">
-        </div>
         <p class="excercise-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        <ol class="task-list">
-            <li> Phasellus non lacus quis nulla faucibus elementum.</li>
-            <li>Morbi tristique egestas justo, viverra iaculis arcu elementum vel.
-                Pellentesque
-            </li>
-            <li>commodo sit amet elit eget posuere. Vestibulum accumsan, sem vel porttitor luctus,
-                mauris mauris placerat lacus, quis sodales est mauris sit amet lectus. Fusce a diam in velit suscipit
-                consectetur. Etiam at turpis
-                a nunc semper faucibus.
-            </li>
-            <li> Cras hendrerit dui a felis rutrum lobortis. Orci varius natoque penatibus et magnis
-                dis parturient montes, nascetur ridiculus mus.
-            </li>
-            <li>Duis posuere lacus quis urna scelerisque, non pharetra enim finibus. Ut vitae risus et nisl faucibus
-                laoreet. Vestibulum fringilla metus id libero accumsan,
-            </li>
-            <li> id sagittis elit tristique. Nunc tempus sed elit ut tincidunt.
-                Mauris id mauris in odio viverra sodales et sed sem. Vestibulum fringilla molestie ex, vehicula
-                pulvinar ante maximus sed.
-            </li>
-        </ol>
+
+            Instrukcja warunkowa jest rozgałęzieniem programu. W zależności od tego, czy warunek zawarty w instrukcji
+            jest prawdziwy lub fałszywy, wykonane zostaną różne instrukcje. W naszym programie możemy użyć klauzuli
+            else, w której umieścimy fragment kodu, który wykona się, gdy warunek w if nie zostanie spełniony.
         </p>
-        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 10 minut</h3></footer>
-    </div>
-    <pre><code class="language-css">
-        .excercise{
-        margin-top: 20px;
-        font-size: 18px;
-        color: var(--light-gray);
+        <p class="excercise-content">Poniżej znajduje się sposób wykorzystania instrukcji warunkowej:</p>
+        <pre><code class="language-js">
+        if(warunek_logiczny) {
+            //kod jeśli warunek zostanie spełniony
         }
-        .excercise{
-        margin-top: 20px;
-        font-size: 18px;
-        color: var(--light-gray);
-        }
-        .excercise{
-        margin-top: 20px;
-        font-size: 18px;
-        color: var(--light-gray);
+
+        else {
+            //kod jeśli warunek nie zostanie spełniony
         }
     </code>
     </pre>
+
+        <br>
+        <h3 class="excercise-header">Warunek logiczny</h3>
+
+        <pre><code class="language-js">
+        //W klauzuli if umieszczamy warunek logiczny, czyli:
+        if(a == b){}
+        if(a != b){}
+        if(a > b){}
+        if(a < b){}
+
+        //Warunki możemy łączyć za pomocą operatorów || (OR) oraz && (AND), na przykład:
+        if(a == b && a != c){}
+        if(a > b || a > c){}
+    </code>
+    </pre>
+
+        <br>
+        <h3 class="excercise-header">Wykorzystując zdobytą wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+
+            W wyskakującym okienku poproś użytkownika o podanie liczby od 0 do 10. Po podaniu liczby::
+        <ol class="task-list">
+            <li>Jeśli liczba jest mniejsza od 5 wypisz: "Liczba jest mniejsza od 5"</li>
+            <li>Jeśli liczba jest większa od 5 wypisz: "Liczba jest większa od 5:"</li>
+            <li>Jeśli liczba jest mniejsza od 4 i mniejsza lub równa 6 wypisz: "4 < {liczba} <= 6"</li>
+        </ol>
+        <br>
+        Po wykonaniu zadania strona powinna wyglądać tak:
+        </p>
+        <div class="excercise-solution">
+            <img height="100%" src="../../images/pro-design.webp" width="100%">
+        </div>
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 10 minut</h3></footer>
+    </div>
+
 </div>
 
 <script src="../../plugins/prism.js"></script>
