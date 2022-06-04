@@ -52,7 +52,9 @@ body {
 }
 
 .header-container h1 {
-    color: var(--blue);
+    -webkit-text-fill-color: var(--black);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--blue);
     font-size: 100px;
     margin-bottom: 20px;
 }
