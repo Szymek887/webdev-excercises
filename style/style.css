@@ -1,0 +1,114 @@
+@import url(reset.css);
+@import url(variables.css);
+@import url(../plugins/prism.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    background-color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.task-anchor {
+    color: var(--blue);
+    font-size: 20px;
+}
+
+.header-container h1, h2{
+    color: var(--blue);
+    font-weight: 900;
+    text-align: center;
+}
+
+.header-container h2 {
+    font-weight: 700;
+    color: white;
+}
+
+.header-container {
+    margin: 100px 0;
+}
+
+.header-container h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.header-container h2 {
+    font-size: 60px;
+}
+
+.tasks-header {
+    margin-bottom: 30px;
+}
+
+.tasks-header h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.task-board {
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    justify-content: center;
+    grid-gap: 50px;
+}
+
+.task {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .3s all;
+}
+
+.task:hover {
+    box-shadow: 0px 0px 59px -14px rgba(52, 152, 219, 1);
+}
+
+.task-container {
+    display: flex;
+    column-gap: 7.5px;
+    /* justify-content: center; */
+}
+
+.task-number {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    align-self: flex-end;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7.5px;
+}
+
+.task-description {
+    color: var(--light-gray);
+}
+
+.section-line {
+    margin: 75px 0;
+    width: 100%;
+    border: none;
+    height: 1.5px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+}
+
+.main-page-footer {
+    color: var(--light-gray);
+    text-align: center;
+    margin: 100px 0 30px 0;
+}
+
+.main-page-footer p {
+    margin: 20px;
+}
