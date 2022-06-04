@@ -46,6 +46,18 @@ body {
     font-size: 20px;
 }
 
+.html-css-tasks .task-anchor {
+    color: var(--html-color);
+}
+
+.js-tasks .task-anchor {
+    color: var(--js-color);
+}
+
+.php-tasks .task-anchor {
+    color: var(--php-color);
+}
+
 .header-container h1, h2{
     font-weight: 900;
     text-align: center;
@@ -95,12 +107,20 @@ body {
 .task {
     width: 100%;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: .3s all;
 }
 
-.task:hover {
-    box-shadow: 0px 0px 59px -14px rgba(52, 152, 219, 1);
+.html-css-tasks .task:hover {
+    box-shadow: 0px 0px 15px 0px var(--html-color);
+}
+
+.js-tasks .task:hover {
+    box-shadow: 0px 0px 15px 0px var(--js-color);
+}
+
+.php-tasks .task:hover {
+    box-shadow: 0px 0px 15px 0px var(--php-color);
 }
 
 .task-container {
