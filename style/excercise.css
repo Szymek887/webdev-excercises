@@ -1,5 +1,6 @@
 .header-container {
     margin: 20px 0;
+    height: initial;
 }
 .header-container h1, h2{
     text-align: left;
@@ -9,6 +10,7 @@
     font-weight: 700;
     color: white;
     font-size: 50px;
+
 }
 .excercise{
     margin-top: 20px;
@@ -50,3 +52,8 @@ h3{
     font-size: 30px;
     font-weight: bold;
 }
+.section-line {
+    margin: 30px 0;
+
+}
+
