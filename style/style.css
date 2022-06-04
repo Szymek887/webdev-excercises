@@ -26,11 +26,11 @@ body {
     justify-content: space-around;
 }
 
-.main-page-header a {
+.main-page-header #html-link a {
     background-image: linear-gradient(
         to right,
-        #54b3d6,
-        #54b3d6 50%,
+        var(--html-color),
+        var(--html-color) 50%,
         white 50%
     );
     background-size: 200% 100%;
@@ -43,9 +43,9 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.main-page-header a::before {
+.main-page-header #html-link a::before {
     content: '';
-    background: #54b3d6;
+    background: var(--html-color);
     display: block;
     position: absolute;
     bottom: -3px;
@@ -55,11 +55,85 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.main-page-header a:hover {
+.main-page-header #html-link a:hover {
     background-position: 0;
 }
 
-.main-page-header a:hover::before {
+.main-page-header #html-link a:hover::before {
+    width: 100%;
+}
+
+.main-page-header #js-link a {
+    background-image: linear-gradient(
+        to right,
+        var(--js-color),
+        var(--js-color) 50%,
+        white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-page-header #js-link a::before {
+    content: '';
+    background: var(--js-color);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-page-header #js-link a:hover {
+    background-position: 0;
+}
+
+.main-page-header #js-link a:hover::before {
+    width: 100%;
+}
+
+.main-page-header #php-link a {
+    background-image: linear-gradient(
+        to right,
+        var(--php-color),
+        var(--php-color) 50%,
+        white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-page-header #php-link a::before {
+    content: '';
+    background: var(--php-color);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-page-header #php-link a:hover {
+    background-position: 0;
+}
+
+.main-page-header #php-link a:hover::before {
     width: 100%;
 }
 
@@ -221,5 +295,20 @@ body {
 @media only screen and (max-width: 900px){
     .task-board {
         grid-template-columns: 45% 45%;
+    }
+
+    .sections h3 {
+        clear: both;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-container h1 {
+        font-size: 75px;
+
+    }
+
+    .header-container h2 {
+        font-size: 50px;
     }
 }
