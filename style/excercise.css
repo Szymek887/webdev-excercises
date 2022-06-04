@@ -16,9 +16,15 @@
     line-height: 22px;
     color: var(--light-gray);
 }
+
+.excercise-header {
+    color: white;
+}
+
 .excercise-content{
     text-align: justify;
     margin-top: 20px;
+    line-height: 25px;
 }
 .excercise-solution{
     margin-top: 20px;
