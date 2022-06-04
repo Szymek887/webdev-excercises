@@ -256,7 +256,7 @@ body {
 .task-container {
     display: flex;
     column-gap: 7.5px;
-    /* justify-content: center; */
+    align-items: center;
 }
 
 .task-number {
