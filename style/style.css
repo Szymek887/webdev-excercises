@@ -232,7 +232,7 @@ body {
 }
 
 .task {
-    width: 100%;
+    width: 60%;
     padding: 20px;
     border-radius: 15px;
     transition: .3s all;
