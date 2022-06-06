@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../style/style.css" rel="stylesheet">
+    <link href="../../style/excercise.css" rel="stylesheet">
+    <title>WebDevelopment - zadania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Switch</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Czym instrukcja switch?</h3>
+        <p class="excercise-content">
+            Switch jest rodzajem instrukcji warunkowej. Jest to instrukcja wyboru, a więc polega na porównywaniu wyniku
+            do konkretnych wartości.
+        </p>
+        <p class="excercise-content">Sposób zastosowania instrukcji switch:</p>
+        <pre><code class="language-js">
+        const zmienna = prompt("Podaj zmienną");
+
+switch (true) {
+    case zmienna < 3:
+        console.log("Liczba jest mniejsza od 3");
+        break;
+    case zmienna > 3 && zmienna < 7:
+        console.log("Liczba jest większa od 3 i mniejsza od 7");
+        break;
+    case zmienna > 10:
+        console.log("Liczba jest większa od 10");
+        break;
+    default:
+        console.log("Żaden warunek nie jest spełniany");
+}
+    </code>
+    </pre>
+        <p class="excercise-content">Po każdym case należy umieścić klauzulę break, która zatrzyma wykonywanie
+            instrukcji, w przeciwnym wypadku nawet po spełnieniu warunku program będzie próbował porównywać wyniki.
+            Default to domyślny przypadek, jeśli żaden warunek nie będzie spełniony to będzie wykonana instrukcja
+            znajdująca się w bloku default.</p>
+
+        <br>
+        <h3 class="excercise-header">Wykorzystując zdobytą wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+
+            W oknie dialogowym poproś użytkownika o podanie nazwy zwierzaka domowego.
+
+        <ol class="task-list">
+            <li>Jeśli poda "kot" wyświetl napis "Koty są super!"</li>
+            <li>Jeśli poda "pies" wyświetl napis "Psy są najlepsze!"</li>
+            <li>Jeśli poda "chomik" wyświetl napis "Wszystkie chomiki są słodkie!"</li>
+            <li>W domyślnym przypadku wyświetl napis "Jakiś dziwny ten zwierzak"</li>
+        </ol>
+        <br>
+        Aby dostać ocenę celującą ostyluj stronę wykorzystując najciekawsze rozwiązania CSS
+        </p>
+
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 20 minut</h3></footer>
+    </div>
+
+</div>
+
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>
