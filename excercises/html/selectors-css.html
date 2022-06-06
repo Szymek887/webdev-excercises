@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - zadania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Selektory CSS</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Jak możemy wybierać elementy do stylowania?</h3>
+        <p class="excercise-content">
+            Tak na prawdę możemy to robić na 3 sposoby:</br>
+            1. Albo odwoływać się do tagu HTML który chcemy ostylować (należy pamiętać, że ostylują się wtedy np. wszystkie paragrafy</br>
+            2. <b>class=""</b> Używamy wtedy gdy chcemy odnosić się do większej ilości elementów na naszej stronie (wszystkie elementy o klasie "red" będą miały kolor czerwony. Należy pamiętać, że w css odnosimy się do klasy dodając kropkę przed jej nazwą</br>
+            3. <b>id=""</b> Używamy wtedy gdy odnosimy się do jedengo elementu na stronie. Aby odnieść się do id w css dodajemy "#" przed nazwę id.
+        </p>
+        <script type="text/plain" class="language-markup">
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <link rel="stylesheet" href="style.css">
+                    <style>
+                        h1 {
+                            color: white;
+                        }
+                        .red {
+                            color: red;
+                        }
+                        #blue {
+                            color: blue;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Biały tekst</h1>
+                    <p class="red">Czerwony tekst</p>
+                    <p id="blue">Niebieski tekst</p>
+                </body>
+            </html>
+        </script>
+        <h3 class="excercise-header">Wykorzystując zdobytą na lekcji wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+            Utwórz podstawową strukturę strony WWW, uwzględniając poniższe wymagania:
+        <div>
+            <ol class="task-list">
+                <li>Dodaj nagłówek stopnia drugiego i ostyluj go dowolnym sposobem tak aby miał kolor biały, pogrubioną czcionkę oraz podkreślenie</li>
+                <li>Dodaj dowolne zdjecie z internetu i dodaj mu id "image", ustaw w CSS wysokość i szerokość na 300px</li>
+                <li>Dodaj dwa paragrafy, jeden o id "first-p", drugi "second-p" i ostyluj je tak samo wykorzystując jak najmniej linijek kodu css. Ustaw wielkość czcionki na 18px, wysokość lini na 20px</li>
+            </ol>
+        </div>
+
+        </p>
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 20 minut</h3></footer>
+    </div>
+</div>
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>

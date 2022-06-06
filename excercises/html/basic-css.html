@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - zadania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Dodawania arkusza stylów na stronę</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Jak dodać arkusz stylów na stronę?</h3>
+        <p class="excercise-content">
+            Style CSS możemy umieszczać w naszym kodzie HTML na 3 sposoby:</br>
+            1. <b>link</b> który umieszczamy w części head naszego dokumentu</br>
+            2. <b>style</b> znacznik który również umieszczamy w części head, piszemy wszystkie nasze style własnie w tym znaczniku nie w osobnym pliku.</br>
+            3. <b>style=""</b> umieszczamy bezpośrednio w znaczniku który chcemy ostylować
+        </p>
+        <script type="text/plain" class="language-markup">
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <link rel="stylesheet" href="style.css">
+                    <style>
+                        body {
+                            color: red;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <p style="color: white">Biały tekst</p>
+                </body>
+            </html>
+        </script>
+        <h3 class="excercise-header">Wykorzystując zdobytą na lekcji wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+            Utwórz podstawową strukturę strony WWW, uwzględniając poniższe wymagania:
+        <div>
+            <ol class="task-list">
+                <li>Dołącz plik style.css do dokumentu</li>
+                <li>Zgodnie z przykładem podanym wyżej, ustaw kolor dla body na czerwony</li>
+            </ol>
+        </div>
+
+        </p>
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 10 minut</h3></footer>
+    </div>
+</div>
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>

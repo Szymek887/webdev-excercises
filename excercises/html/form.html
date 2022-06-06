@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - zadania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Formularze</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Jak wstawić formularz na stronę?</h3>
+        <p class="excercise-content">
+            Potrzebne tagi do stworzenia formularza:</br>
+            1. <b>form</b> Znacznik w którym umieszczamy nasz formularz</br>
+            2. <b>input</b> W którym podajemy typ danych który chcemy uzyskać od użytkownika</br>
+            3. <b>label</b>, Czyli etykieta opis inputa</br>
+            4. <b>select, option</b> Znaczniki które są potrzebne do stworzenia listy rozwijanej </br>
+            5. <b>button</b> Tworzy przycisk, któremu możemy przypisać różne funkcje np. wysłania formularza bądź zresetowania go</br>
+            6. <b>textarea</b>, Czyli pole tekstowe, słuzy do wporwadzania większej ilości tekstu.
+        </p>
+        <script type="text/plain" class="language-markup">
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <meta charset="UTF-8">
+                </head>
+                <body>
+                    <p>przykładowy formularz</p>
+                    <form>
+                        <input type="text" placeholder="Podaj imię">
+                        <input type="number" placeholder="Podaj wiek">
+                        <label for="input-city">Podaj miasto</label>
+                        <input type="text" id="input-city">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Wyślij</button>
+                    </form>
+                </body>
+            </html>
+        </script>
+    </br>
+        <h3 class="excercise-header">Wykorzystując zdobytą na lekcji wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+            Utwórz podstawową strukturę strony WWW, uwzględniając poniższe wymagania:
+        <div>
+            <ol class="task-list">
+                <li>Wstaw formularz</li>
+                <li>Dodaj 4 różnego typy inputy (imie, nazwisko, mail i data urodzin), do których dołącz etykiety z opisem co trzeba podać do danego inputa.</li>
+                <li>Na końcu wstaw przycisk który będzie wysyłał formularz</li>
+            </ol>
+        </div>
+
+        </p>
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 15 minut</h3></footer>
+    </div>
+</div>
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>
