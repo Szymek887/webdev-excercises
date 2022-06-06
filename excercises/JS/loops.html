@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../style/style.css" rel="stylesheet">
+    <link href="../../style/excercise.css" rel="stylesheet">
+    <title>WebDevelopment - zadania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Pętla for, while, do while</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Czym jest pętla?</h3>
+        <p class="excercise-content">
+            Pętla to taka konstrukcja, która służy do zdefiniowania instrukcji, które będą powtarzane wielokrotnie, do
+            spełnienia jakiegoś warunku. Jeśli na przykład chcemy wypisać liczby od 0 do 100, to nie piszemy stu linijek
+            kodu, tylko stosujemy pętlę, która w kilku linijkach wykona to samo.
+        </p>
+        <p class="excercise-content">Jeżeli wiemy, ile razy ma się wykonać określona część kodu, korzystamy z pętli for:</p>
+        <pre><code class="language-js">
+        for (let i = 0; i < 100; i++) {
+            //kod, który będzie wykonywany dopóki warunek jest spełniany
+        }
+    </code>
+    </pre>
+        <br>
+        <p class="excercise-content">Jeżeli nasz kod ma się wykonywać dopóki jakiś warunek będzie spełniany, korzystamy z pętli while:</p>
+        <pre><code class="language-js">
+        while (i < 100) {
+            //kod, który będzie wykonywany dopóki warunek jest spełniany
+            //tutaj należy pamiętać, aby zmieniać zmienną i, na przykład inkrementując
+        }
+    </code>
+    </pre>
+        <br>
+        <p class="excercise-content">Jeżeli chcemy, aby nasz kod wykonał się conajmniej raz, korzystamy z konstrukcji do while:</p>
+        <pre><code class="language-js">
+        do {
+            //kod, który będzie wykonywany dopóki warunek jest spełniany
+            //tutaj należy pamiętać, aby zmieniać zmienną i, na przykład inkrementując
+        } while(i<100);
+    </code>
+    </pre>
+
+        <br>
+        <h3 class="excercise-header">Wykorzystując zdobytą wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+
+            W dowolny sposób poproś użytkownika o podanie 10 liczb (na przykład w oknach dialogowych) i wyświetl:
+
+        <ol class="task-list">
+            <li>Średnią arytmetyczną tych liczb</li>
+            <li>Największą i najmniejszą liczbę</li>
+            <li>Liczby w kolejności od największej do najmniejszej</li>
+            <li>Liczby w kolejności od najmniejszej do największej</li>
+        </ol>
+        <br>
+        Aby dostać ocenę celującą ostyluj stronę wykorzystując najciekawsze rozwiązania CSS
+        </p>
+
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 30 minut</h3></footer>
+    </div>
+
+</div>
+
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>
