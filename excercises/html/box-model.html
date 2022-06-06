@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - zadania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Model blokowy</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Czym jest model blokowy?</h3>
+        <p class="excercise-content">
+            Model blokowy pokazuje nam jakie wielkości posiadają wybrane elementy: content, padding, border, margin.
+            Aby zobaczyć box-model danego elementu na stronie wchodzimy w narzędzia deweloperskie i klikamy na dowolny element i wyszukujemy paru prostokątów nałożonych na siebie
+        </p>
+        <script type="text/plain" class="language-markup">
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <link rel="stylesheet" href="style.css">
+                    <style>
+                        #div-1 {
+                            padding: 30px;
+                            border: 1px solid red;
+                            margin: 50px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div id="div-1">:)</div>
+                </body>
+            </html>
+        </script>
+        <h3 class="excercise-header">Wykorzystując zdobytą na lekcji wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+            Utwórz podstawową strukturę strony WWW, uwzględniając poniższe wymagania:
+        <div>
+            <ol class="task-list">
+                <li>Dodaj diva, ustaw mu margines wewnętrzny na 50px, zmień domyślny model pudełkowy na border-box, dodaj 5px czerwoną ramkę wokół z zaokrąglonymi krawędziami</li>
+            </ol>
+        </div>
+
+        </p>
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 10 minut</h3></footer>
+    </div>
+</div>
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>

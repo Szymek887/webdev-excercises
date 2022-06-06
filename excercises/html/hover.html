@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - zadania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Pseudoklasy i Pseudoelementy</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Czym są?</h3>
+        <p class="excercise-content">
+            Pseudoklasy pomagają nam na zmianę wyglądu elementu HTML np. po najechaniu na niego myszką, jeżeli ma jakieś atrybuty albo określony stan.
+            Natomiast Pseudoelementy określają część elementów HTML. Tymi częściami są: piersza litera, pierwszy wiersz, zaznaczenie, wstawka przed elementem, wstawka po elemencie.
+        </p>
+        <script type="text/plain" class="language-markup">
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <meta charset="UTF-8">
+                </head>
+                <style>
+                    #p-1:hover {
+                        color: white;
+                        font-weight: bold;
+                    }
+                </style>
+                <body>
+                    <p id="p-1">Najedź na mnie!</p>
+                </body>
+            </html>
+        </script>
+    </br>
+        <h3 class="excercise-header">Wykorzystując zdobytą na lekcji wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+            Utwórz podstawową strukturę strony WWW, uwzględniając poniższe wymagania:
+        <div>
+            <ol class="task-list">
+                <li> 
+                    Stwórz odnośnik do strony elektronika i wyczyść jego wszystkie domyślne style. Po najechaniu link ma się podkreślić na biało, jego czcionka ma zostać pochylona.
+                </li>
+                <li>
+                    Stwórz listę niepunktowaną i wyczyść jej domyślne style. Korzystając z pseudoelementów dodaj na początek i koniec każdego wiersza listy znak "x".
+            </ol>
+        </div>
+
+        </p>
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 15 minut</h3></footer>
+    </div>
+</div>
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>
