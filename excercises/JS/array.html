@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - zadania</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">
+            <h2>JavaScript</h2>
+        </div>
+        <hr class="section-line">
+        <div class="excercise">
+            <h3 class="excercise-header">Tablice</h3>
+            <p class="excercise-content">Tablice służą do przechowywania wielu zmiennych. W języku JavaScript do
+                pracy na tablicach można używać wbudowanego obiektu array. Posiada on metody do manipulacji tablicami
+                zmiennych. Tablice w języku JavaScript zaczynają się od indeksu 0.</p>
+            <br>
+            <p class="excercise-content">Tworzenie tablic </p>
+            <pre>
+                <code class="language-javascript">
+                let Owoce = new Array(); // Tworzenie pustej tablicy za pomocą wbudowanej metody
+                let Pieczywo = new Array(5); // Tworzeni pustej tablicy o wielkości 5
+
+                let Warzywa = []; // Tworzenie pustej tablicy
+                let Samochody = ["Fiat","Ford", "BMW"]; // Tworzenie tablicy z 3 elementami
+                </code>
+            </pre>
+            <br>
+            <p class="excercise-content">Dodawanie wartości do tablicy</p>
+            <pre>
+                <code class="language-javascript">
+                let Warzywa = []; // Tworzenie pustej tablicy
+
+                Warzywa.push("Bakłażan"); // Dodawanie elementu na ostatnie miejsce w tablicy
+                console.log(Warzywa[0]); // Wypisze "Bakłażan"
+
+                Warzywa[99] = "Marchewka"; // Dodawanie elementu na setne miejsce w tablicy 
+                //(Tablice w JS zaczynają się od indeksu 0, więc 99 indeks to tak naprawdę setny element)
+
+                Warzywa.unshift("Sałata"); // Dodanie elementu na początek tablicy
+                console.log(Warzywa[0]) // Wypisze "Sałata"
+                </code>
+            </pre>
+            <br>
+            <h3 class="excercise-header">Wykorzystując zdobytą wiedzę wykonaj poniższe zadanie:</h3>
+
+            <ol class="task-list">
+                <li> Stwórz tablicę o nazwie "Samochody"</li>
+                <li>Dodaj do niej 3 marki samochodów w kolejności: Ford, Fiat, BMW
+                </li>
+                <li>Wypisz ostatni element tablicy
+                </li>
+                <li> Dodaj dowolny element na początek tablicy
+                </li>
+                <li>Wypisz z tablicy element "Fiat"
+                </li>
+                <li> Dodaj dowolny element na koniec tablicy
+                </li>
+            </ol>
+            </p>
+            <footer class="excercise-footer">
+                <h3 class="excercise-header">Czas na wykonanie zadania: 10 minut</h3>
+            </footer>
+        </div>
+        <!-- <script type="text/plain" class="language-markup">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            
+        </body>
+        </html>
+    </script>
+
+        <pre>
+            <code class="language-css">
+        .excercise{
+            margin-top: 20px;
+            font-size: 18px;
+            color: var(--light-gray);
+        }
+        .excercise{
+            margin-top: 20px;
+            font-size: 18px;
+            color: var(--light-gray);
+        }
+        .excercise{
+            margin-top: 20px;
+            font-size: 18px;
+            color: var(--light-gray);
+        }
+        </code>
+    </pre> -->
+    </div>
+    <script src="../../plugins/prism.js"></script>
+</body>
+
+</html>
