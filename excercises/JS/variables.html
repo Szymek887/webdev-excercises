@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - zadania</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">
+            <h2>JavaScript</h2>
+        </div>
+        <hr class="section-line">
+        <div class="excercise">
+            <h3 class="excercise-header">Typy danych, zmienne i stałe</h3>
+            <p class="excercise-content">W języku JavaScript występuje 6 wbudowanych typów danych: null, undefined,
+                Boolean, Number, String, Object. Zmienne służą do przechowywania danych i wyników w celu dalszego ich
+                wykorzystania.
+                W języku JavaScript zmienne deklaruje się za pomocą słowa kluczowego var lub let i const poprzedzającego
+                nazwę zmiennej. Słowo var uznaje się za porzestarzałe.
+            </p>
+            <br>
+
+            <p class="excercise-content">Zmienne i stałe</p>
+            <pre>
+                <code class="language-javascript">
+                let a = 5; // Tworzenie zmiennej "a", o wartości 5
+
+                const B = 3.14 // Tworzenie stałej, czyli zmiennej, której nie można zmienić wartości
+                </code>
+            </pre>
+            <br>
+
+
+            <p class="excercise-content"><i><b>null</b></i> - reprezentuje zamierzony brak wartości elementu. </p>
+            <pre>
+                <code class="language-javascript">
+                let a = null;
+                console.log(a); // Wypisze "null"
+                </code>
+            </pre>
+            <br>
+
+
+            <p class="excercise-content"><i><b>undefined</b></i> - każda zmienna stworzona za pomocą <i><b>let</b></i>
+                lub
+                <i><b>var</b></i> bez nadawanie wartości ma domyślnie wartość <i><b>undefined</b></i>
+            </p>
+            <pre>
+                    <code class="language-javascript">
+                    let a;
+                    console.log(a); // Wypisze "undefined"
+                    </code>
+                </pre>
+            <br>
+
+            <p class="excercise-content"><i><b>Boolean</b></i> - przyjmuje wartość <i><b>True</b></i> lub
+                <i><b>False</b></i>
+            </p>
+            <pre>
+                    <code class="language-javascript">
+                    let a = True;
+                    let b = False;
+                    console.log(a); // True
+                    if(a){
+                        console.log("Prawda") // Wypisze do konsoli
+                    }
+
+                    if(b){
+                        console.log("Prawda") // Nie wypisze do konsoli
+                    }
+                    </code>
+                </pre>
+            <br>
+
+
+            <p class="excercise-content"> <i><b>Number</b></i> - zmienna o wartości liczbowej, np. 42 lub 3.14 </p>
+            <pre>
+                <code class="language-javascript">
+                let a = 5
+
+                let b = 23
+                let c = a+b
+
+                console.log(c) // 28
+                </code>
+            </pre>
+            <br>
+
+
+            <p class="excercise-content"><i><b>String</b></i> - tworzy obiek pozwalający działać na ciągu znaków. W
+                JavaScrip-cie, ciągi znaków są niezmienialne.</p>
+            <pre>
+                <code class="language-javascript">
+                    let a = "Ala ma kota";
+                    console.log(a.length) // Wypisuje długość ciągu
+                </code>
+            </pre>
+            <br>
+
+            <p class="excercise-content"><i><b>Object</b></i> - jest typem złożonym. Wszystkie zmienne nie będące typem
+                prymitywnym są obiektami (typami złożonymi).
+                Charakteryzują się one tym, że zmienne nie mają przypisanej bezpośrednio wartości, a tylko wskazują na
+                miejsce w pamięci, gdzie te dane są przetrzymywane. Obiektem jest na przykład Array.</p>
+            <pre>
+                <code class="language-javascript">
+                    const a = [1, 2, 3]; // Tworzenie obiektu
+
+                    console.log(a) // [1, 2, 3]
+                </code>
+            </pre>
+            <br>
+
+
+            <h3 class="excercise-header">Wykorzystując zdobytą wiedzę wykonaj poniższe zadanie:</h3>
+            <br>
+            <ol class="task-list">
+                <li> Stwórz zmienną typu String i przypisz do niej wartość "Hello World!"</li>
+                <li> Stwórz stałą i nadaj jej wartość 3.14
+                </li>
+
+            </ol>
+            </p>
+            <footer class="excercise-footer">
+                <h3 class="excercise-header">Czas na wykonanie zadania: 5 minut</h3>
+            </footer>
+        </div>
+        <!-- <script type="text/plain" class="language-markup">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            
+        </body>
+        </html>
+    </script>
+
+        <pre>
+            <code class="language-css">
+        .excercise{
+            margin-top: 20px;
+            font-size: 18px;
+            color: var(--light-gray);
+        }
+        .excercise{
+            margin-top: 20px;
+            font-size: 18px;
+            color: var(--light-gray);
+        }
+        .excercise{
+            margin-top: 20px;
+            font-size: 18px;
+            color: var(--light-gray);
+        }
+        </code>
+    </pre> -->
+    </div>
+    <script src="../../plugins/prism.js"></script>
+</body>
+
+</html>

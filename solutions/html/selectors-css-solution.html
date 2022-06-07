@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - rozwiązania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Selektory CSS - rozwiązanie</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Wykorzystując zdobytą na lekcji wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+            Utwórz podstawową strukturę strony WWW, uwzględniając poniższe wymagania:
+        <div>
+            <ol class="task-list">
+                <li>Dodaj nagłówek stopnia drugiego i ostyluj go dowolnym sposobem tak aby miał kolor biały, pogrubioną czcionkę oraz podkreślenie</li>
+                <li>Dodaj dowolne zdjecie z internetu i dodaj mu id "image", ustaw w CSS wysokość i szerokość na 300px</li>
+                <li>Dodaj dwa paragrafy, jeden o id "first-p", drugi "second-p" i ostyluj je tak samo wykorzystując jak najmniej linijek kodu css. Ustaw wielkość czcionki na 18px, wysokość lini na 20px</li>
+            </ol>
+        </div>
+
+        </p>
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 20 minut</h3></footer>
+
+        <script type="text/plain" class="language-markup">
+            <!DOCTYPE html>
+            <html lang="pl">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="author" content="imie i nazwisko">
+                <title>Dokument</title>
+                <style>
+                    h2 {
+                        color: white;
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                    #image {
+                        height: 300px;
+                        width: 300px;
+                    }
+
+                    #first-p, #second-p {
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                </style>
+            </head>
+            <body>
+                <h2>Nagłówek stopnia drugiego</h2>
+                <img src="zdjecie.jpg" alt="zdjęcie" id="image">
+                <p id="first-p">Pierwszy paragraf</p>
+                <p id="second-p">Drugi paragraf</p>
+            </body>
+            </html>
+        </script>
+    </div>
+</div>
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>

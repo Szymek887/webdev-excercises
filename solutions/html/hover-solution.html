@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - rozwiązania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Pseudoklasy i Pseudoelementy - rozwiązanie</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Wykorzystując zdobytą na lekcji wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+            Utwórz podstawową strukturę strony WWW, uwzględniając poniższe wymagania:
+        <div>
+            <ol class="task-list">
+                <li> 
+                    Stwórz odnośnik do strony elektronika i wyczyść jego wszystkie domyślne style. Po najechaniu link ma się podkreślić na biało, jego czcionka ma zostać pochylona.
+                </li>
+                <li>
+                    Stwórz listę niepunktowaną i wyczyść jej domyślne style. Korzystając z pseudoelementów dodaj na początek i koniec każdego wiersza listy znak "x".
+            </ol>
+        </div>
+
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 15 minut</h3></footer>
+        <script type="text/plain" class="language-markup">
+            <!DOCTYPE html>
+            <html lang="pl">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <style>
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    a:hover {
+                        border-bottom: 1px solid white;
+                        font-style: italic;
+                    }
+
+                    ol {
+                        list-style-type: none;
+                    }
+
+                    ol li:before {
+                        content: "x";
+                        color: black;
+                    }
+                </style>
+            </head>
+            <body>
+                <a href="https://www.elektronik.edu.pl/">Przejdź do strony elektronika</a>
+
+                <ol>
+                    <li>Kot</li>
+                    <li>Pies</li>
+                    <li>Papuga</li>
+                    <li>Hipopotam</li>
+                </ol>
+            </body>
+            </html>
+        </script>
+        </p>
+
+    </div>
+</div>
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>
