@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/excercise.css">
+    <title>WebDevelopment - rozwiązania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Formularze - rozwiązanie</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Wykorzystując zdobytą na lekcji wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+            Utwórz podstawową strukturę strony WWW, uwzględniając poniższe wymagania:
+        <div>
+            <ol class="task-list">
+                <li>Wstaw formularz</li>
+                <li>Dodaj 4 różnego typy inputy (imie, nazwisko, mail i data urodzin), do których dołącz etykiety z opisem co trzeba podać do danego inputa.</li>
+                <li>Na końcu wstaw przycisk który będzie wysyłał formularz</li>
+            </ol>
+        </div>
+
+        </p>
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 15 minut</h3></footer>
+
+        <script type="text/plain" class="language-markup">
+            <!DOCTYPE html>
+            <html lang="pl">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+            </head>
+            <body>
+                <form>
+                    <label for="name-input">Podaj imię</label>
+                    <input type="text id="name-input">
+                    <label for="surname-input">Podaj nazwisko</label>
+                    <input type="text" id="surname-input">
+                    <label for="mail-input">Podaj mail</label>
+                    <input type="mail" id="mail-input">
+                    <label for="date-input">Podaj datę urodzin</label>
+                    <input type="date" id="date-input">
+                    <button type="submit">Wyślij</button>
+                </form>
+            </body>
+            </html>
+        </script>
+    </div>
+</div>
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>
