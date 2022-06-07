@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../style/style.css" rel="stylesheet">
+    <link href="../../style/excercise.css" rel="stylesheet">
+    <title>WebDevelopment - zadania</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Zdarzenia</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Po co są zdarzenia?</h3>
+        <p class="excercise-content">
+            Kiedy napiszemy naszą stronę internetową z użyciem HTML i CSS jest ona statyczna czyli użytkownik nie może
+            wchodzić z nią w interakcję. Przykładem zdarzenia jest na przykład kliknięcie przycisku czy najechanie
+            kursorem na jakiś element.
+        </p>
+        <p class="excercise-content">Za podstawowy rodzaj zdarzenia przyjmijmy kliknięcie przycisku. Możemy je
+            zaimplementować na dwa sposoby. Pierwszym z nich jest onclick - w przycisku umieszczamy wyrażenie onclick i
+            po nim nazwę funkcji, która wykona się po kliknięciu tego przycisku.
+        </p>
+
+        <script type="text/plain" class="language-markup">
+        <button class="default-button" onclick="funkcja()">Kliknij mnie!</button>
+
+        </script>
+        <pre><code class="language-js">
+        function funkcja(){
+            //kod, który wykona się po wciśnięciu przycisku
+            }
+
+    </code>
+    </pre>
+        <br>
+        <p class="excercise-content">Drugim sposobem jest dodanie event listenera, czyli funkcji nasłuchującej jakiegoś zdarzenia na podanym elemencie.</p>
+        <pre><code class="language-js">
+        const button = document.querySelector('.default-button');
+        button.addEventListener("click", ()=>{
+            //kod, który wykona się po wciśnięciu przycisku
+            });
+    </code>
+    </pre>
+        <p class="excercise-content">Zaletą event listenera jest to, że jeśli chcemy zmienić zdarzenie, albo nazwę funkcji, musimy edytować jedynie JS.</p>
+        <br>
+        <h3 class="excercise-header">Wykorzystując zdobytą wiedzę wykonaj poniższe zadanie:</h3>
+        <p class="excercise-content">
+
+            Na stronie umieść wyśrodkowany paragraf o treści: "Twoje imię: " oraz przycisk z napisem "Kliknij mnie!", po którego kliknięciu:
+
+        <ol class="task-list">
+            <li>Zmieni się jego kolor</li>
+            <li>Pod spodem pojawi się napis: "Kliknąłeś przycisk!"</li>
+            <li>W paragrafie "Twoje imię" dopisze się Twoje imię</li>
+            <li>Zmieni się napis na przycisku na "Kliknięty!"</li>
+        </ol>
+        <br>
+        Aby dostać ocenę celującą ostyluj stronę wykorzystując najciekawsze rozwiązania CSS
+        </p>
+
+        <footer class="excercise-footer"><h3 class="excercise-header">Czas na wykonanie zadania: 30 minut</h3></footer>
+    </div>
+
+</div>
+
+<script src="../../plugins/prism.js"></script>
+</body>
+</html>
