@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../../style/style.css" rel="stylesheet">
+    <link href="../../style/excercise.css" rel="stylesheet">
+    <title>WebDevelopment - zadania</title>
+</head>
+
+<body  class="line-numbers">
+<div class="container">
+    <div class="header-container">
+        <h2>Obiekty</h2>
+    </div>
+    <hr class="section-line">
+    <div class="excercise">
+        <h3 class="excercise-header">Czym jest obiekt?</h3>
+        <p class="excercise-content">Obiekty to takie "pudełka". Na przykład samochód. Taki obiekt ma markę, model,
+            pojemność silnika, rodzaj nadwozia, rodzaj paliwa, wymiary czy maksymalną prędkość. To są jego właściwości.
+            Może jeździć, trąbić, świecą się jego światła. To jego czynności - w obiektowych językach programowania
+            nazywamy je funkcjami lub metodami. Wszystkie te właściwości i czynności są upakowane w jeden obiekt -
+            samochód. Dzięki temu jeżeli chcemy coś z nim zrobić, mamy dostęp do wszytkich rzeczy pod postacią jednego
+            obiektu.</p>
+        <br>
+        <p class="excercise-content">Analogicznie do powyższego przykładu obiektem jest każdy element na stronie. Na
+            przykład przycisk, ma on swoje właściwości takie jak treść, czyli napis, który się na nim znajduje,
+            wysokość, szerokość i pozycję na stronie.</p>
+        <br>
+        <h3 class="excercise-header">Tworzenie obiektu</h3>
+        <pre>
+                <code class="language-javascript">
+                    const car = {
+                    brand: "Volkswagen",
+                    model: "Golf",
+                    generation: "VI",
+                    maxSpeed: 240,
+                    drive(){
+                        return "The car is now driving"
+                    }
+                }
+                </code>
+            </pre>
+        <br>
+        <h3 class="excercise-header">Odwoływanie się do właściwości obiektu</h3>
+        <pre>
+                <code class="language-javascript">
+                console.log(car.brand) //Volkswagen
+                </code>
+            </pre>
+
+        <p class="excercise-content">Powyżej zaprezentowane obiekty są proste. W pracy programisty jednak będziemy mieć
+            do czynienia z obiektami złożonymi, których właściwościami będą kolejne obiekty. Na przykład człowiek, ma on
+            swoje dane, ale dodatkowo na przykład ma psa, samochód, dom, telefon. Każdy z tych elementów ma swoje
+            właściwości.</p>
+        <pre>
+            <code class="language-javascript">
+                const person = {
+                name: "Adam",
+
+                pet: {
+                    name: "Mruczek",
+                    type: "pies",
+                    color: "black"
+                    favoriteMeal: "mięso"
+                    }
+
+                car: {
+                    brand: "Volkswagen",
+                    model: "Golf",
+                    generation: "VI"
+
+                }
+
+                console.log(person.pet.name) //Mruczek
+            </code>
+            </pre>
+        <ol class="task-list">
+
+            <li>Dodaj do niej 3 marki samochodów w kolejności: Ford, Fiat, BMW
+            </li>
+            <li>Wypisz ostatni element tablicy
+            </li>
+            <li> Dodaj dowolny element na początek tablicy
+            </li>
+            <li>Wypisz z tablicy element "Fiat"
+            </li>
+            <li> Dodaj dowolny element na koniec tablicy
+            </li>
+            <li> Wypisz wszystkie elementy tablicy do konsoli
+            </li>
+        </ol>
+        </p>
+        <footer class="excercise-footer">
+            <h3 class="excercise-header">Czas na wykonanie zadania: 10 minut</h3>
+        </footer>
+    </div>
+    <!-- <script type="text/plain" class="language-markup">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+    </body>
+    </html>
+</script>
+
+    <pre>
+        <code class="language-css">
+    .excercise{
+        margin-top: 20px;
+        font-size: 18px;
+        color: var(--light-gray);
+    }
+    .excercise{
+        margin-top: 20px;
+        font-size: 18px;
+        color: var(--light-gray);
+    }
+    .excercise{
+        margin-top: 20px;
+        font-size: 18px;
+        color: var(--light-gray);
+    }
+    </code>
+</pre> -->
+</div>
+<script src="../../plugins/prism.js"></script>
+</body>
+
+</html>
