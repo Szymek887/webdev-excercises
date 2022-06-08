@@ -10,7 +10,7 @@
     <title>WebDevelopment - zadania</title>
 </head>
 
-<body  class="line-numbers">
+<body class="line-numbers">
 <div class="container">
     <div class="header-container">
         <h2>Obiekty</h2>
@@ -71,66 +71,68 @@
                     brand: "Volkswagen",
                     model: "Golf",
                     generation: "VI"
-
-                }
+                    }
 
                 console.log(person.pet.name) //Mruczek
             </code>
             </pre>
-        <ol class="task-list">
+        <br>
+        <h3 class="excercise-header">Dodawanie zmiennych jako właściwości obiektów</h3>
+        <pre>
+            <code class="language-javascript">
+                let name = "Adam";
+                let pet = "Mruczek";
+                let carBrand = "Volkswagen";
 
-            <li>Dodaj do niej 3 marki samochodów w kolejności: Ford, Fiat, BMW
+                const person = {
+                name: name,
+                pet: pet,
+                car: {
+                    brand: carBrand
+                    }
+                }
+
+                console.log(person.pet) //Mruczek
+            </code>
+            </pre>
+        <br>
+        <h3 class="excercise-header">Wykorzystując wiedzę zdobytą na lekcji wykonaj poniższe polecenia:</h3>
+        <p class="excercise-content">W wyskakującym okienku poproś użytkownika o podanie:
+        <ol class="task-list">
+            <li>Imienia
             </li>
-            <li>Wypisz ostatni element tablicy
+            <li>Nazwiska
             </li>
-            <li> Dodaj dowolny element na początek tablicy
+            <li>Numer telefonu
             </li>
-            <li>Wypisz z tablicy element "Fiat"
+            <li>Ulubionej marki samochodu
             </li>
-            <li> Dodaj dowolny element na koniec tablicy
+            <li>Imienia zwierzaka
             </li>
-            <li> Wypisz wszystkie elementy tablicy do konsoli
+            <li>Gatunku zwierzaka (w tej samej właściwości co poprzedni podpunkt)
             </li>
         </ol>
         </p>
+        <p class="excercise-content">A następnie wyświetl te dane na stronie w wyśrodkowanym divie w formie:</p>
+        <ol class="task-list">
+            <li>Na samej górze: Imię i nazwisko w jednym paragrafie
+            </li>
+            <li>Poniżej numer telefonu: [podany przez użytkownika numer telefonu]
+            </li>
+            <li>Ulubiony samochód: [podana przez użytkownika marka]
+            </li>
+            <li>Ulubiony zwierzak: [podane przez użytkownika imię zwierzaka]
+            </li>
+            <li>Gatunek zwierzaka: [podany przez użytkownika gatunek zwierzaka]
+            </li>
+        </ol>
+        <p class="excercise-content"><b>Postaraj się, aby wyświetlony div wyglądał jak wizytówka</b></p>
+
         <footer class="excercise-footer">
-            <h3 class="excercise-header">Czas na wykonanie zadania: 10 minut</h3>
+            <h3 class="excercise-header">Czas na wykonanie zadania: 30 minut</h3>
         </footer>
     </div>
-    <!-- <script type="text/plain" class="language-markup">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
 
-    </body>
-    </html>
-</script>
-
-    <pre>
-        <code class="language-css">
-    .excercise{
-        margin-top: 20px;
-        font-size: 18px;
-        color: var(--light-gray);
-    }
-    .excercise{
-        margin-top: 20px;
-        font-size: 18px;
-        color: var(--light-gray);
-    }
-    .excercise{
-        margin-top: 20px;
-        font-size: 18px;
-        color: var(--light-gray);
-    }
-    </code>
-</pre> -->
 </div>
 <script src="../../plugins/prism.js"></script>
 </body>
